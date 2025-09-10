@@ -66,10 +66,10 @@ nohup python main.py &
 nohup python main.py >> main.log 2>&1 &
 ```
 
-与上一个例子相同作用的简写方法
+与上一个例子相同作用的简写方法(都是追加到文件中)
 
 ```shell
-nohup python main.py &> main.log &
+nohup python main.py &>> main.log &
 ```
 
 不记录输出信息
@@ -82,4 +82,5 @@ nohup python main.py &> /dev/null &
 
 ```shell
 nohup python main.py &> /dev/null & echo $! > pidfile.txt
+
 ```
